@@ -237,39 +237,51 @@ ul
     position: relative;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: var(--text-black-700);
+}
+
 .aside .logo a span
 {
     font-family: "Fjalla One",cursive;
     font-size: 40px;
 }
 
-.aside .logo a::before
-{
-    content:'';
+.aside .logo a::before {
+    content: '';
     position: absolute;
-    width: 20px;
-    height: 20px;
-    border-bottom: 5px solid var(--skin-color);
-    border-left: 5px solid var(--skin-color);
+    width: 30px;
+    height: 30px;
+    border-bottom: 8px solid var(--skin-color);
+    border-left: 8px solid var(--skin-color);
     bottom: 0;
     left: 0;
-
-
+    border-radius: 20px; /* Add rounded corners */
+    box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+    transform: rotate(-15deg); /* Rotate the element slightly */
+    background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(0,0,0,0.2)); /* Add a subtle gradient */
 }
 
-
-.aside .logo a::after
-{
-    content:'';
+.aside .logo a::after {
+    content: '';
     position: absolute;
-    width: 20px;
-    height: 20px;
-    border-top: 5px solid var(--skin-color);
-    border-right: 5px solid var(--skin-color);
+    width: 30px;
+    height: 30px;
+    border-top: 8px solid var(--skin-color);
+    border-right: 8px solid var(--skin-color);
     top: 0;
     right: 0;
-
+    border-radius: 20px; /* Add rounded corners */
+    box-shadow: 10px -10px 15px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+    transform: rotate(15deg); /* Rotate the element slightly */
+    background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(0,0,0,0.2)); /* Add a subtle gradient */
 }
+
 
 .aside .nav-toggler
 {
@@ -432,28 +444,34 @@ h3.my-profession
     position: relative;
 }
 
-.home-img::after
-{
+.home-img::after {
     content: '';
     position: absolute;
-    height: 80px;
-    width: 80px;
-    border-bottom: 10px solid var(--skin-color);
-    border-right: 10px solid var(--skin-color);
-    right: 20px;
-    bottom: -40px;
+    height: 100px;
+    width: 100px;
+    border-bottom: 8px solid var(--skin-color);
+    border-right: 8px solid var(--skin-color);
+    right: 10px;
+    bottom: -30px;
+    border-radius: 20px; /* Add rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+    transform: rotate(15deg); /* Rotate the element slightly */
+    background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(0,0,0,0.2)); /* Add a subtle gradient */
 }
 
-.home-img::before
-{
+.home-img::before {
     content: '';
     position: absolute;
-    height: 80px;
-    width: 80px;
-    border-top: 10px solid var(--skin-color);
-    border-left: 10px solid var(--skin-color);
-    left: 20px;
-    top: -40px;
+    height: 100px;
+    width: 100px;
+    border-top: 8px solid var(--skin-color);
+    border-left: 8px solid var(--skin-color);
+    left: 10px;
+    top: -30px;
+    border-radius: 20px; /* Add rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+    transform: rotate(-15deg); /* Rotate the element slightly */
+    background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(0,0,0,0.2)); /* Add a subtle gradient */
 }
 
 
