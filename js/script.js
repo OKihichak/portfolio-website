@@ -37,6 +37,11 @@ for (let i = 0; i < totalNavList; i++) {
     }
     this.classList.add("active");
     showSection(this);
+    
+    // Hide sidebar after clicking a section
+    if (window.innerWidth < 1200) {
+      asideSectionTogglerBtn();
+    }
   });
 }
 
@@ -74,6 +79,8 @@ document.querySelector(".hire-me").addEventListener("click", function () {
   updateNav(this);
   removeBackSection();
   addBackSection(sectionIndex);
+
+  
 });
 
 // Sidebar toggling logic
@@ -91,6 +98,7 @@ function asideSectionTogglerBtn() {
     allSection[i].classList.toggle("open");
   }
 }
+
 
 
 function sendEmail() {
