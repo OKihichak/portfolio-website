@@ -18,6 +18,9 @@ let typed = new Typed(".typing", {
   /*   Side Bar */
 
 
+
+
+  
   const nav = document.querySelector(".nav"),
   navList = nav.querySelectorAll("li"),
   totalNavList = navList.length,
@@ -94,6 +97,19 @@ navTogglerBtn.addEventListener("click", () => {
 function asideSectionTogglerBtn() {
   aside.classList.toggle("open");
   navTogglerBtn.classList.toggle("open");
+  for (let i = 0; i < totalSection; i++) {
+    allSection[i].classList.toggle("open");
+  }
+}
+
+
+function asideSectionTogglerBtn() {
+  aside.classList.toggle("open");
+  navTogglerBtn.classList.toggle("open");
+  
+  // Toggle the class on the style switcher to move it down
+  document.querySelector(".style-switcher").classList.toggle("sidebar-open");
+  
   for (let i = 0; i < totalSection; i++) {
     allSection[i].classList.toggle("open");
   }

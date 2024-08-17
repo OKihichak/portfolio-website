@@ -80,6 +80,7 @@ function updateLocalStorage() {
     }
 }
 
+
 // Apply the saved theme when the page loads
 window.addEventListener("load", () => {
     if (localStorage.getItem("theme") === "dark") {
@@ -92,3 +93,4 @@ window.addEventListener("load", () => {
         dayNight.querySelector("i").classList.remove("fa-sun");
     }
 });
+

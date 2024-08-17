@@ -13,6 +13,8 @@
     transform: translateX(100%);
 }
 
+
+
 .style-switcher.open
 {
     transform: translateX(-25px);
@@ -100,15 +102,3 @@
 }
 
 
-@media (max-width:1199px)
- {
-    .style-switcher
-{
-    
-    top: 20px;
-    
-}
-
-    
-
- }   
