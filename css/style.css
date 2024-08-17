@@ -840,18 +840,20 @@ h3.my-profession
 }
 
 .portfolio-detail-button a {
-    display: block;
+    display: inline-block;
     font-size: 16px; 
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin: 0; /* Ensure no margin affects the alignment */
+    padding: 0; /* Remove padding to avoid misalignment */
     font-weight: bold;
-    unicode-bidi: isolate;
     color: var(--text-portfolio);
-    line-height: 1.5;
-    text-decoration: underline; 
+    text-decoration: underline;
+    line-height: 1.5; /* Match line-height with the title */
+    align-self: center; /* Align to the center of the flex container */
 }
+
+
+
+
 
 
 /* Contact */
@@ -895,13 +897,18 @@ h3.my-profession
     margin: 15px 0 5px;
   }
   
-  .contact .contact-info-item p {
+  .contact .contact-info-item p,
+  .contact .contact-info-item a {
     font-size: 16px;
     line-height: 25px;
     font-weight: 400;
     color: var(--text-black-700);
   }
   
+  .contact .contact-info-item a:hover {
+    text-decoration: underline; /* Optionally, underline links on hover */
+}
+
   .contact .contact-form {
     flex: 0 0 100%;
     max-width: 100%;
@@ -1136,3 +1143,22 @@ h3.my-profession
       max-width: 100%;
     }
   }
+
+  @media (max-width: 370px) {
+    .portfolio-item-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px; /* Ensure this applies only to text inside header */
+        margin-bottom: 10px;
+    }
+
+    
+    .portfolio-detail-button a {
+        font-size: 13px; 
+        margin: 0; /* Remove any margin to ensure alignment */
+        line-height: 1.2; /* Slightly reduce line height for better fit */
+        padding: 0; /* Remove any padding that could affect alignment */
+        display: inline-block; /* Ensures the anchor tag behaves consistently */
+    }
+}

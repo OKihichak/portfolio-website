@@ -98,3 +98,17 @@
 {
     background: purple;
 }
+
+
+@media (max-width:1199px)
+ {
+    .style-switcher
+{
+    
+    top: 20px;
+    
+}
+
+    
+
+ }   
