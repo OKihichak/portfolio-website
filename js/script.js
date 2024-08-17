@@ -19,9 +19,17 @@ let typed = new Typed(".typing", {
 
 
 
+// Ensure proper initialization on page load
+window.addEventListener("load", function() {
+  // Remove the 'contact-empty' class after a short delay or upon interaction
+  setTimeout(() => {
+    const contactSection = document.querySelector("#contact");
+    contactSection.classList.remove("contact-empty");
+    contactSection.querySelector(".container").style.display = ""; // Restore the container display
+  }, 600); // 1-second delay before showing the content (adjust as needed)
+});
 
-  
-  const nav = document.querySelector(".nav"),
+const nav = document.querySelector(".nav"),
   navList = nav.querySelectorAll("li"),
   totalNavList = navList.length,
   allSection = document.querySelectorAll(".section"),
@@ -82,8 +90,6 @@ document.querySelector(".hire-me").addEventListener("click", function () {
   updateNav(this);
   removeBackSection();
   addBackSection(sectionIndex);
-
-  
 });
 
 // Sidebar toggling logic
@@ -101,7 +107,6 @@ function asideSectionTogglerBtn() {
     allSection[i].classList.toggle("open");
   }
 }
-
 
 function asideSectionTogglerBtn() {
   aside.classList.toggle("open");

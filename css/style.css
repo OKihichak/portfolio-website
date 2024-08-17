@@ -67,6 +67,10 @@ ul
 
 }
 
+.contact-empty .container {
+    display: none;
+}
+
 .section.back-section
 {
     z-index: 1;
