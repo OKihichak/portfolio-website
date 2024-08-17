@@ -8,6 +8,7 @@
     --bg-black-50: #e8dfec;
     --text-black-900:#302e4d;
     --text-black-700:#504e70;
+    --text-portfolio:#e8dfec;
 }
 
 body.dark 
@@ -237,14 +238,14 @@ ul
     position: relative;
 }
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     outline: none;
     text-decoration: none;
     box-sizing: border-box;
     color: var(--text-black-700);
-}
+} */
 
 .aside .logo a span
 {
@@ -252,7 +253,7 @@ ul
     font-size: 40px;
 }
 
-.aside .logo a::before {
+/* .aside .logo a::before {
     content: '';
     position: absolute;
     width: 30px;
@@ -261,10 +262,10 @@ ul
     border-left: 8px solid var(--skin-color);
     bottom: 0;
     left: 0;
-    border-radius: 20px; /* Add rounded corners */
-    box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
-    transform: rotate(-15deg); /* Rotate the element slightly */
-    background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(0,0,0,0.2)); /* Add a subtle gradient */
+    border-radius: 20px; 
+    box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.3); 
+    transform: rotate(-15deg); 
+    background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(0,0,0,0.2));
 }
 
 .aside .logo a::after {
@@ -276,11 +277,11 @@ ul
     border-right: 8px solid var(--skin-color);
     top: 0;
     right: 0;
-    border-radius: 20px; /* Add rounded corners */
-    box-shadow: 10px -10px 15px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
-    transform: rotate(15deg); /* Rotate the element slightly */
-    background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(0,0,0,0.2)); /* Add a subtle gradient */
-}
+    border-radius: 20px;
+    box-shadow: 10px -10px 15px rgba(0, 0, 0, 0.3); 
+    transform: rotate(15deg); 
+    background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(0,0,0,0.2)); 
+} */
 
 
 .aside .nav-toggler
@@ -444,7 +445,7 @@ h3.my-profession
     position: relative;
 }
 
-.home-img::after {
+/* .home-img::after {
     content: '';
     position: absolute;
     height: 100px;
@@ -453,10 +454,10 @@ h3.my-profession
     border-right: 8px solid var(--skin-color);
     right: 10px;
     bottom: -30px;
-    border-radius: 20px; /* Add rounded corners */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
-    transform: rotate(15deg); /* Rotate the element slightly */
-    background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(0,0,0,0.2)); /* Add a subtle gradient */
+    border-radius: 20px; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transform: rotate(15deg); 
+    background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(0,0,0,0.2)); 
 }
 
 .home-img::before {
@@ -468,11 +469,11 @@ h3.my-profession
     border-left: 8px solid var(--skin-color);
     left: 10px;
     top: -30px;
-    border-radius: 20px; /* Add rounded corners */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
-    transform: rotate(-15deg); /* Rotate the element slightly */
-    background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(0,0,0,0.2)); /* Add a subtle gradient */
-}
+    border-radius: 20px; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); 
+    transform: rotate(-15deg); 
+    background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(0,0,0,0.2)); 
+} */
 
 
 .home .home-img img
@@ -751,28 +752,6 @@ h3.my-profession
     font-weight: 500;
 }
 
-/* .portfolio .portfolio-item
-{
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
-    margin-bottom: 30px;
-}
-
-.portfolio .portfolio-item-inner
-{
-    border: 6px solid var(--bg-black-100);
-    border-radius: 10px;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.portfolio .portfolio-item-inner .portfolio-img img
-{
-    width: 100%;
-    display: block;
-}
-
- */
 
  .portfolio .row {
     display: flex;
@@ -820,7 +799,7 @@ h3.my-profession
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: rgb(218, 206, 206);
+    color: var(--text-portfolio);
     margin-bottom: 10px;
 }
 
@@ -860,8 +839,19 @@ h3.my-profession
     display: block;   
 }
 
-
-
+.portfolio-detail-button a {
+    display: block;
+    font-size: 16px; 
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    color: var(--text-portfolio);
+    line-height: 1.5;
+    text-decoration: underline; 
+}
 
 
 /* Contact */
