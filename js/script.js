@@ -26,7 +26,7 @@ window.addEventListener("load", function() {
     const contactSection = document.querySelector("#contact");
     contactSection.classList.remove("contact-empty");
     contactSection.querySelector(".container").style.display = ""; // Restore the container display
-  }, 600); // 1-second delay before showing the content (adjust as needed)
+  }, 900); // 1-second delay before showing the content (adjust as needed)
 });
 
 const nav = document.querySelector(".nav"),
